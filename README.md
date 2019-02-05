@@ -1,4 +1,4 @@
-# Embedding SQLite in Console Application
+# Embedding SQLite in Console Application Demo
 
 [Costura.Fody](https://github.com/Fody/Costura) is an add-in for [Fody](https://github.com/Fody/Home/) and it is by far the best and easiest way to embed external assemblies in your executable.
 
