@@ -7,6 +7,8 @@ It is just enough to add [Costura NuGet Package](https://www.nuget.org/packages/
 In our case external library **SQLite.Interop.dll** targeting both platforms, 32 and 64-bits and **we have to embed both dlls**. That's why we have to create two folders called costura32 and costura64 and copy the correct version of **SQLite.Interop.dll** into each one. 
 <u>We also have to change the Build Action for both files to Embedded Resource.</u>
 
+![](https://github.com/matjazbravc/Embedded-SQLite-Demo/blob/master/res/CosturaFody.jpg)
+
 By installing Costura NuGet Package a config file called **FodyWeavers.xml** was added to the root folder of project. Usually you don’t have to specify what external libraries to embed, but for all external libraries that are targeted to a specific platform (32 and 64-bits) we have to specify this in the **FodyWeavers.xml** like it is in our case (do not include .dll in the names):
 
 ```xml
